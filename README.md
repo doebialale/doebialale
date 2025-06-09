@@ -1,10 +1,10 @@
-# Hey there! 👋 I'm Shaheer Airaj 🌟
+# Hey there! 👋 I'm Doebi Alale 🌟
 
-Data Scientist | AI Explorer | Lifelong Learner
+Data Scientist | Data Engineer | AI Explorer | Automation Engineer | Cloud Engineer | Network Engineer | Technology Enthusiast | Lifelong Learner
 
 ---
 ### 🚀 About Me
-I'm a data enthusiast who loves to dive into datasets, uncover hidden patterns, and build models that solve real-world problems. Whether it's predicting the future or explaining the past, I'm on it!
+I'm a technology enthusiast who loves to learn. My recent hobby is diving into datasets, uncover hidden patterns, and build models that solve real-world problems. Whether it's predicting the future or explaining the past, I'm on it! I also love integrating technologies. I like to think of it as creating a neural network of technologies and not just of Tensors.
 
 ### 💼 What I Do
 - 📈 Build predictive models for business insights.
@@ -20,4 +20,4 @@ I'm a data enthusiast who loves to dive into datasets, uncover hidden patterns, 
 ![Power BI](https://img.shields.io/badge/-Power%20BI-yellow?style=flat-square&logo=powerbi)
 ![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
 
-![Shaheer's GitHub stats](https://github-readme-stats.vercel.app/api?username=shaheerairaj&show_icons=true&theme=nightowl)
+![Doebi's GitHub stats](https://github-readme-stats.vercel.app/api?username=doebialale&show_icons=true&theme=nightowl)
