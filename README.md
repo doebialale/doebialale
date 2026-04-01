@@ -1,6 +1,6 @@
 # Hey there! 👋 I'm Doebi Alale 🌟
 
-Data Scientist | Data Engineer | AI Explorer | Automation Engineer | Cloud Engineer | Network Engineer | Technology Enthusiast | Lifelong Learner
+Machine Learning Engineer | AI Engineer and Explorer | Automation Engineer | Cloud Engineer | Network Engineer | Technology Enthusiast | Lifelong Learner
 
 ---
 ### 🚀 About Me
