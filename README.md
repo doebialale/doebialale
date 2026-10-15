@@ -1,6 +1,6 @@
 <!-- Profile banner -->
 <p align="center">
-  <img src="assets/images/doebi-alale.jpg" alt="Doebi Alale" width="180" style="border-radius:16px;" />
+  <img src="assets/images/doebi-alale.png" alt="Doebi Alale" width="180" style="border-radius:16px;" />
 </p>
 
 <h1 align="center">Hey there! 👋 I'm Doebi Alale 🌟</h1>
