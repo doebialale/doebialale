@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doebi Alale — CTO of SourceValidate | AI/ML Engineer</title>
+  <meta name="description" content="Doebi Alale is the CTO of SourceValidate and a Senior AI/ML Engineer at Tyndale USA, building secure, scalable AI, RAG, and cloud systems. AWS & Azure certified.">
+  <meta name="author" content="Doebi Alale">
+  <link rel="canonical" href="https://doebialale.sourcevalidate.com/">
+  <meta property="og:title" content="Doebi Alale — CTO of SourceValidate | AI/ML Engineer">
+  <meta property="og:description" content="CTO of SourceValidate and Senior AI/ML Engineer at Tyndale USA. Building secure, scalable AI, RAG, and cloud systems.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://doebialale.sourcevalidate.com/">
+  <meta property="og:image" content="https://doebialale.sourcevalidate.com/assets/images/doebi-alale.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f2744'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='16' font-weight='700' fill='%23d6a94b' text-anchor='middle'%3EDA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Doebi Alale",
+    "jobTitle": "Chief Technology Officer, SourceValidate; Senior AI/ML Engineer, Tyndale USA",
+    "url": "https://doebialale.sourcevalidate.com/",
+    "image": "https://doebialale.sourcevalidate.com/assets/images/doebi-alale.jpg",
+    "email": "mailto:doebialale@yahoo.com",
+    "telephone": "+1-281-965-6531",
+    "sameAs": [
+      "https://github.com/doebialale",
+      "https://www.linkedin.com/in/doebi-alale",
+      "https://www.credly.com/users/doebi-alale",
+      "https://datascienceportfol.io/doebialale"
+    ],
+    "worksFor": [
+      { "@type": "Organization", "name": "SourceValidate" },
+      { "@type": "Organization", "name": "Tyndale USA" }
+    ],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Calabar" },
+      { "@type": "CollegeOrUniversity", "name": "Houston Community College" }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --navy: #0f2744;
+      --navy-dark: #0a1a2e;
+      --navy-light: #1d3c66;
+      --gold: #d6a94b;
+      --gold-dark: #b8912f;
+      --green: #1a7a2e;
+      --green-dark: #15612a;
+      --bg: #efe3c4;
+      --white: #fdfaf3;
+      --text: #333333;
+      --text-light: #555555;
+      --text-muted: #888888;
+      --border: #e0e0e0;
+      --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+      --shadow-elevated: 0 10px 30px rgba(0, 0, 0, 0.16);
+      --radius: 10px;
+      --radius-lg: 18px;
+      --transition: 0.25s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--green); text-decoration: none; transition: color var(--transition); }
+    a:hover { color: var(--green-dark); }
+    img { max-width: 100%; display: block; }
+    .container { width: min(1120px, 92%); margin: 0 auto; }
+    .gold-bar { height: 5px; background: linear-gradient(90deg, var(--gold), var(--gold-dark)); }
+
+    /* --- Top bar --- */
+    .topbar {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(15, 39, 68, 0.96);
+      backdrop-filter: blur(8px);
+      color: var(--white);
+    }
+    .topbar .container { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+    .brand { font-weight: 800; letter-spacing: 0.5px; color: var(--white); font-size: 1.05rem; }
+    .brand span { color: var(--gold); }
+    .nav-links { display: flex; gap: 26px; }
+    .nav-links a { color: #e7eef7; font-weight: 500; font-size: 0.93rem; }
+    .nav-links a:hover { color: var(--gold); }
+    @media (max-width: 760px) { .nav-links { display: none; } }
+
+    /* --- Hero --- */
+    .hero {
+      background:
+        radial-gradient(1200px 500px at 80% -10%, rgba(214,169,75,0.18), transparent 60%),
+        linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+      color: var(--white);
+      padding: 74px 0 84px;
+    }
+    .hero .container { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: center; }
+    .hero .eyebrow {
+      display: inline-block; font-size: 0.8rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 18px;
+    }
+    .hero h1 { font-size: clamp(2.1rem, 4.6vw, 3.3rem); line-height: 1.1; margin: 0 0 14px; font-weight: 800; }
+    .hero h1 .accent { color: var(--gold); }
+    .hero .role { font-size: 1.15rem; font-weight: 600; color: #e7eef7; margin-bottom: 20px; }
+    .hero p.lead { color: #c9d6e6; font-size: 1.02rem; max-width: 56ch; margin: 0 0 30px; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 13px 24px; border-radius: 999px; font-weight: 700; font-size: 0.95rem;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+    }
+    .btn-primary { background: linear-gradient(135deg, var(--green), var(--green-dark)); color: var(--white); }
+    .btn-primary:hover { color: var(--white); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(26,122,46,0.4); }
+    .btn-outline { border: 2px solid var(--gold); color: var(--gold); }
+    .btn-outline:hover { background: var(--gold); color: var(--navy-dark); transform: translateY(-2px); }
+
+    .hero-photo { position: relative; justify-self: center; }
+    .hero-photo img {
+      width: clamp(240px, 26vw, 330px); aspect-ratio: 4/5; object-fit: cover;
+      border-radius: var(--radius-lg); border: 4px solid rgba(214,169,75,0.6);
+      box-shadow: var(--shadow-elevated);
+    }
+    .hero-photo .badge {
+      position: absolute; bottom: -18px; left: 50%; transform: translateX(-50%);
+      background: var(--white); color: var(--navy); font-weight: 700; font-size: 0.82rem;
+      padding: 8px 18px; border-radius: 999px; box-shadow: var(--shadow-card); white-space: nowrap;
+    }
+    @media (max-width: 860px) {
+      .hero .container { grid-template-columns: 1fr; text-align: center; }
+      .hero-cta { justify-content: center; }
+      .hero p.lead { margin-left: auto; margin-right: auto; }
+      .hero-photo { order: -1; margin-bottom: 20px; }
+    }
+
+    /* --- Sections --- */
+    section.block { padding: 72px 0; }
+    section.block.alt { background: var(--bg); }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; color: var(--navy); margin: 0 0 10px; }
+    .section-sub { color: var(--text-light); max-width: 62ch; margin: 0 0 42px; }
+    .kicker { font-size: 0.78rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-dark); }
+
+    /* --- Highlight cards --- */
+    .grid { display: grid; gap: 24px; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 880px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+    .card {
+      background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 28px; box-shadow: var(--shadow-card); transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-elevated); }
+    .card .ico {
+      width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+    }
+    .card .ico svg { width: 24px; height: 24px; stroke: var(--gold); fill: none; stroke-width: 2; }
+    .card h3 { margin: 0 0 8px; color: var(--navy); font-size: 1.15rem; }
+    .card p { margin: 0; color: var(--text-light); font-size: 0.95rem; }
+
+    /* --- Feature split (CTO / Tyndale) --- */
+    .split { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; align-items: start; }
+    @media (max-width: 880px) { .split { grid-template-columns: 1fr; } }
+    .feature { background: var(--white); border-radius: var(--radius-lg); padding: 34px; box-shadow: var(--shadow-card); border-top: 4px solid var(--gold); }
+    .feature .tag { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--white); background: var(--green); padding: 5px 12px; border-radius: 999px; margin-bottom: 14px; }
+    .feature h3 { color: var(--navy); font-size: 1.35rem; margin: 0 0 12px; }
+    .feature ul { margin: 16px 0 0; padding: 0; list-style: none; }
+    .feature ul li { position: relative; padding-left: 28px; margin-bottom: 11px; color: var(--text-light); font-size: 0.95rem; }
+    .feature ul li::before { content: ""; position: absolute; left: 0; top: 8px; width: 14px; height: 14px; border-radius: 50%; background: radial-gradient(circle at 50% 50%, var(--gold) 0 5px, transparent 6px), var(--green); }
+
+    /* --- Experience timeline --- */
+    .timeline { position: relative; margin-top: 10px; padding-left: 28px; }
+    .timeline::before { content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(var(--gold), var(--navy-light)); }
+    .tl-item { position: relative; padding: 0 0 30px 4px; }
+    .tl-item::before { content: ""; position: absolute; left: -26px; top: 5px; width: 14px; height: 14px; border-radius: 50%; background: var(--white); border: 3px solid var(--gold); }
+    .tl-item .role { font-weight: 700; color: var(--navy); font-size: 1.05rem; }
+    .tl-item .meta { color: var(--gold-dark); font-weight: 600; font-size: 0.86rem; margin: 2px 0 8px; }
+    .tl-item p { margin: 0; color: var(--text-light); font-size: 0.94rem; }
+
+    /* --- Skills / chips --- */
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip { background: var(--white); border: 1px solid var(--border); color: var(--navy); font-weight: 600; font-size: 0.86rem; padding: 8px 15px; border-radius: 999px; box-shadow: var(--shadow-card); }
+    .skill-group { margin-bottom: 26px; }
+    .skill-group h4 { color: var(--gold-dark); text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin: 0 0 12px; }
+
+    /* --- Certs & education --- */
+    .list-plain { list-style: none; margin: 0; padding: 0; }
+    .list-plain li { padding: 11px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; gap: 16px; font-size: 0.94rem; }
+    .list-plain li:last-child { border-bottom: 0; }
+    .list-plain li span.where { color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
+    .list-plain li strong { color: var(--navy); font-weight: 600; }
+
+    /* --- Contact --- */
+    .contact { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%); color: var(--white); }
+    .contact .section-title { color: var(--white); }
+    .contact .section-sub { color: #c9d6e6; }
+    .contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 10px; }
+    @media (max-width: 880px) { .contact-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius);
+      padding: 22px; text-align: center; transition: transform var(--transition), background var(--transition);
+    }
+    .contact-card:hover { transform: translateY(-4px); background: rgba(214,169,75,0.14); }
+    .contact-card svg { width: 26px; height: 26px; stroke: var(--gold); fill: none; stroke-width: 2; margin-bottom: 10px; }
+    .contact-card .label { font-size: 0.74rem; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); }
+    .contact-card .value { color: var(--white); font-weight: 600; font-size: 0.92rem; word-break: break-word; }
+    .contact-card a { color: var(--white); }
+    .contact-card a:hover { color: var(--gold); }
+
+    footer { background: var(--navy-dark); color: #9fb2c9; text-align: center; padding: 26px 0; font-size: 0.85rem; }
+    footer a { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">Doebi <span>Alale</span></div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#focus">What I Do</a>
+        <a href="#roles">Leadership</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <span class="eyebrow">AI &amp; Cloud Engineering Leader</span>
+        <h1>Doebi Alale</h1>
+        <div class="role">CTO, <span style="color:var(--gold)">SourceValidate</span> &nbsp;·&nbsp; Senior AI/ML Engineer, Tyndale USA</div>
+        <p class="lead">I design and ship secure, scalable AI and cloud systems — from Retrieval-Augmented Generation and agentic AI to multi-account cloud architecture and MLOps. I turn complex engineering into products that protect brands and deliver real business value.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/doebi-alale" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/images/doebi-alale.jpg" alt="Doebi Alale, CTO of SourceValidate">
+        <span class="badge">AWS &amp; Azure Certified · Terraform</span>
+      </div>
+    </div>
+  </section>
+  <div class="gold-bar"></div>
+
+  <!-- About -->
+  <section class="block" id="about">
+    <div class="container">
+      <span class="kicker">About Me</span>
+      <h2 class="section-title">Engineer, builder, and lifelong learner</h2>
+      <div class="split" style="margin-top:28px;">
+        <div>
+          <p>I'm a versatile senior Machine Learning and Cloud Engineer with a decade-plus track record across data engineering, cloud automation, and enterprise-scale AI. I love integrating technologies — building what I think of as a <em>neural network of systems</em>, not just of tensors.</p>
+          <p>My work spans supervised and unsupervised learning, NLP, Retrieval-Augmented Generation (RAG), and agentic AI frameworks for document intelligence and autonomous reasoning. Underpinning it all is a strong foundation in secure, cost-efficient infrastructure built with Terraform, Ansible, containers, and multi-account cloud design.</p>
+          <p>I'm equally comfortable architecting an ML platform, mentoring a team, and translating deep technical trade-offs for executive stakeholders.</p>
+        </div>
+        <div class="grid grid-2" style="align-content:start;">
+          <div class="card"><h3 style="font-size:1.8rem;margin:0;">10+</h3><p>Years across ML, data, and cloud engineering</p></div>
+          <div class="card"><h3 style="font-size:1.8rem;margin:0;">60%</h3><p>Inference cost cut by migrating models to AWS Lambda</p></div>
+          <div class="card"><h3 style="font-size:1.8rem;margin:0;">10+</h3><p>AWS, Azure, Terraform &amp; CompTIA certifications</p></div>
+          <div class="card"><h3 style="font-size:1.8rem;margin:0;">Multi</h3><p>Secure multi-account cloud architectures delivered</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I do -->
+  <section class="block alt" id="focus">
+    <div class="container">
+      <span class="kicker">What I Do</span>
+      <h2 class="section-title">Where I create impact</h2>
+      <p class="section-sub">End-to-end ownership — from research and architecture to production, observability, and cost control.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 2.4 1.2 4 2.5 5.5C8.5 15.5 9 16.5 9 18h6c0-1.5.5-2.5 1.5-3.5C17.8 13 19 11.4 19 9a7 7 0 00-7-7z"/><path d="M9 21h6"/></svg></div>
+          <h3>Applied AI &amp; RAG</h3>
+          <p>Retrieval-Augmented Generation and document-centric QA systems that improve grounding, relevance, and factual accuracy.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6v6H9z"/><path d="M3 9h2M3 15h2M19 9h2M19 15h2M9 3v2M15 3v2M9 19v2M15 19v2"/></svg></div>
+          <h3>Agentic AI Systems</h3>
+          <p>Autonomous agents with tool use, secure API calls, and multi-step reasoning orchestrated across real-world workflows.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+          <h3>MLOps &amp; Pipelines</h3>
+          <p>Reproducible training pipelines, model versioning, CI/CD, and observability with MLflow, W&amp;B, and Airflow.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M18 10a6 6 0 00-11.3-2.8A4.5 4.5 0 006 16h12a4 4 0 000-8z"/></svg></div>
+          <h3>Cloud Architecture</h3>
+          <p>Secure, cost-efficient multi-account AWS &amp; Azure platforms provisioned as code with Terraform and Ansible.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Security &amp; IAM</h3>
+          <p>Least-privilege IAM, ABAC/RBAC, secure API access, and compliance-minded design across the stack.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9M16 3.1a4 4 0 010 7.8"/></svg></div>
+          <h3>Mentorship &amp; Delivery</h3>
+          <p>Onboarding, knowledge transfer, and cross-functional collaboration that lift team velocity and release reliability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership roles: CTO + Tyndale -->
+  <section class="block" id="roles">
+    <div class="container">
+      <span class="kicker">Current Roles</span>
+      <h2 class="section-title">Leadership &amp; current work</h2>
+      <div class="split" style="margin-top:28px;">
+        <div class="feature">
+          <span class="tag">Chief Technology Officer</span>
+          <h3>SourceValidate</h3>
+          <p>As CTO, I lead the technology behind SourceValidate — a product-authenticity platform that fights counterfeiting with unique, verifiable QR codes. I own the architecture end to end.</p>
+          <ul>
+            <li>Designed the serverless verification platform on AWS Lambda, API Gateway, CloudFront, and DynamoDB.</li>
+            <li>Built multi-tenant authentication with Amazon Cognito, including per-tenant SSO and machine-to-machine API access.</li>
+            <li>Shipped a reusable Terraform module and per-customer ops pipelines for repeatable, isolated deployments.</li>
+            <li>Added quota tiers, anomaly detection, automated billing/invoicing, and a Bedrock RAG chatbot for support.</li>
+          </ul>
+        </div>
+        <div class="feature">
+          <span class="tag">Senior AI/ML Engineer</span>
+          <h3>Tyndale USA &nbsp;<small style="color:var(--text-muted);font-weight:500;font-size:0.8rem;">Nov 2025 – Present</small></h3>
+          <p>I build and optimize enterprise AI systems, with a focus on document intelligence, agentic chatbots, and responsible, governed LLM usage.</p>
+          <ul>
+            <li>Designed RAG architectures powering document-centric question answering with stronger grounding and accuracy.</li>
+            <li>Optimized production chatbots for low-latency inference using AWS Bedrock Agents.</li>
+            <li>Integrated external tools and secure API calls into agentic frameworks for real-time data retrieval.</li>
+            <li>Drove SDLC best practices, LLM governance, observability, and cost controls across AI initiatives.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience timeline -->
+  <section class="block alt" id="experience">
+    <div class="container">
+      <span class="kicker">Career</span>
+      <h2 class="section-title">Experience</h2>
+      <p class="section-sub">A progression from hands-on infrastructure to senior AI/ML and technology leadership.</p>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="role">Senior AI/ML Engineer — Tyndale USA</div>
+          <div class="meta">Nov 2025 – Present · Hybrid</div>
+          <p>RAG architectures, Bedrock agentic chatbots, LLM governance, and secure, cost-aware AI delivery.</p>
+        </div>
+        <div class="tl-item">
+          <div class="role">Chief Technology Officer — SourceValidate</div>
+          <div class="meta">Ongoing</div>
+          <p>Technical leadership of a serverless, multi-tenant product-authenticity platform on AWS.</p>
+        </div>
+        <div class="tl-item">
+          <div class="role">Machine Learning Engineer — Techsur Solutions</div>
+          <div class="meta">Nov 2022 – Nov 2025 · Remote</div>
+          <p>Built supervised/unsupervised models and agentic systems; a stacked meta-model lifted accuracy 5%+. Designed Airflow pipelines with retraining triggers and cut inference costs 60% by moving models to Lambda.</p>
+        </div>
+        <div class="tl-item">
+          <div class="role">Senior Data Engineer — Johnson &amp; Johnson</div>
+          <div class="meta">Nov 2019 – Nov 2022 · New Jersey</div>
+          <p>Scalable ETL/ELT for batch and streaming data, SageMaker provisioning via Terraform, data lake/Redshift solutions, and 40% better pipeline reliability with Prometheus &amp; Grafana.</p>
+        </div>
+        <div class="tl-item">
+          <div class="role">Cloud Automation Engineer — Enterprise Holdings</div>
+          <div class="meta">Jan 2016 – Nov 2019 · St. Louis, MO</div>
+          <p>Built a network security hub, automated IaC with Terraform/Ansible/Jenkins, and saved 30% on monthly costs by migrating Splunk logs to S3.</p>
+        </div>
+        <div class="tl-item">
+          <div class="role">Computer Technician — Alale Benign Resources</div>
+          <div class="meta">Aug 2012 – Dec 2015</div>
+          <p>Built and maintained PCs, networks, and operating systems — where the hands-on engineering foundation began.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="block" id="skills">
+    <div class="container">
+      <span class="kicker">Toolbox</span>
+      <h2 class="section-title">Skills &amp; technologies</h2>
+      <div class="split" style="margin-top:28px;">
+        <div>
+          <div class="skill-group">
+            <h4>AI / ML</h4>
+            <div class="chips">
+              <span class="chip">RAG</span><span class="chip">Agentic AI</span><span class="chip">NLP</span>
+              <span class="chip">AWS Bedrock</span><span class="chip">LangChain</span><span class="chip">Scikit-learn</span>
+              <span class="chip">TensorFlow</span><span class="chip">MLflow</span><span class="chip">Weights &amp; Biases</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Cloud &amp; DevOps</h4>
+            <div class="chips">
+              <span class="chip">AWS</span><span class="chip">Azure</span><span class="chip">Terraform</span>
+              <span class="chip">Ansible</span><span class="chip">Lambda</span><span class="chip">SageMaker</span>
+              <span class="chip">ECS / EKS</span><span class="chip">GitHub Actions</span><span class="chip">Jenkins</span>
+              <span class="chip">Airflow</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group">
+            <h4>Data &amp; Languages</h4>
+            <div class="chips">
+              <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PySpark</span>
+              <span class="chip">Glue</span><span class="chip">Athena</span><span class="chip">Redshift</span>
+              <span class="chip">ETL / ELT</span><span class="chip">PowerShell</span><span class="chip">Bash</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Security &amp; Observability</h4>
+            <div class="chips">
+              <span class="chip">IAM (ABAC/RBAC)</span><span class="chip">Cognito</span><span class="chip">Secrets Manager</span>
+              <span class="chip">CloudWatch</span><span class="chip">Prometheus</span><span class="chip">Grafana</span>
+              <span class="chip">Splunk</span><span class="chip">Palo Alto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certs + Education -->
+  <section class="block alt">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="kicker">Credentials</span>
+          <h2 class="section-title" style="margin-bottom:22px;">Certifications</h2>
+          <ul class="list-plain">
+            <li><strong>AWS Certified Advanced Networking – Specialty</strong><span class="where">Amazon Web Services</span></li>
+            <li><strong>AWS Certified Solutions Architect</strong><span class="where">Amazon Web Services</span></li>
+            <li><strong>Azure Solutions Architect Expert</strong><span class="where">Microsoft Azure</span></li>
+            <li><strong>HashiCorp Terraform Associate</strong><span class="where">HashiCorp</span></li>
+            <li><strong>CompTIA Network+ &amp; A+</strong><span class="where">CompTIA</span></li>
+            <li><strong>Machine Learning A-Z: AI, Python &amp; R</strong><span class="where">Udemy</span></li>
+            <li><strong>Palo Alto PCNSA &amp; PCNSE</strong><span class="where">Udemy</span></li>
+          </ul>
+          <p style="margin-top:16px;"><a href="https://www.credly.com/users/doebi-alale" target="_blank" rel="noopener">View all badges on Credly →</a></p>
+        </div>
+        <div>
+          <span class="kicker">Background</span>
+          <h2 class="section-title" style="margin-bottom:22px;">Education</h2>
+          <ul class="list-plain">
+            <li><strong>M.Sc, Computer Science</strong><span class="where">University of Calabar</span></li>
+            <li><strong>B.Sc, Computer Science</strong><span class="where">University of Calabar</span></li>
+            <li><strong>A.A.S, Cyber Security</strong><span class="where">Houston Community College</span></li>
+          </ul>
+          <h2 class="section-title" style="margin:34px 0 22px;">Explore my work</h2>
+          <ul class="list-plain">
+            <li><strong>Data Science Portfolio</strong><span class="where"><a href="https://datascienceportfol.io/doebialale" target="_blank" rel="noopener">datascienceportfol.io</a></span></li>
+            <li><strong>Open Source &amp; Code</strong><span class="where"><a href="https://github.com/doebialale" target="_blank" rel="noopener">github.com/doebialale</a></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="block contact" id="contact">
+    <div class="container">
+      <span class="kicker" style="color:var(--gold)">Let's Talk</span>
+      <h2 class="section-title">Get in touch</h2>
+      <p class="section-sub">Open to collaboration, consulting, and conversations about AI, cloud, and brand-protection technology.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:doebialale@yahoo.com">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+          <div class="label">Email</div>
+          <div class="value">doebialale@yahoo.com</div>
+        </a>
+        <a class="contact-card" href="tel:+12819656531">
+          <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8.1 9.6a16 16 0 006 6l1.2-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.9 2.3z"/></svg>
+          <div class="label">Phone</div>
+          <div class="value">+1 (281) 965-6531</div>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/doebi-alale" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-4 0v6h-4v-12h4v1.5A6 6 0 0116 8z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <div class="label">LinkedIn</div>
+          <div class="value">in/doebi-alale</div>
+        </a>
+        <a class="contact-card" href="https://github.com/doebialale" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 00-1-2.6c3-.3 6.2-1.5 6.2-6.8A5.3 5.3 0 0019.8 4a4.9 4.9 0 00-.1-3.6s-1.1-.3-3.7 1.4a12.6 12.6 0 00-6.6 0C6.8.1 5.7.4 5.7.4A4.9 4.9 0 005.6 4a5.3 5.3 0 00-1.4 3.7c0 5.3 3.2 6.5 6.2 6.8a3.4 3.4 0 00-1 2.6V22"/></svg>
+          <div class="label">GitHub</div>
+          <div class="value">github.com/doebialale</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      &copy; <span id="yr"></span> Doebi Alale · CTO, SourceValidate · Senior AI/ML Engineer, Tyndale USA
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
